@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thời Gian Biểu Cá Nhân</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📅 Thời Gian Biểu Cá Nhân</h1>
+  <div class="controls">
+    <input type="text" id="activityInput" placeholder="Nhập hoạt động...">
+    <select id="daySelect">
+      <option value="Thứ 2">Thứ 2</option>
+      <option value="Thứ 3">Thứ 3</option>
+      <option value="Thứ 4">Thứ 4</option>
+      <option value="Thứ 5">Thứ 5</option>
+      <option value="Thứ 6">Thứ 6</option>
+      <option value="Thứ 7">Thứ 7</option>
+      <option value="Chủ nhật">Chủ nhật</option>
+    </select>
+    <input type="time" id="timeInput">
+    <select id="typeSelect">
+      <option value="hoc">📘 Học tập</option>
+      <option value="congviec">💼 Công việc</option>
+      <option value="giaitri">🎮 Giải trí</option>
+      <option value="canhan">🏠 Cá nhân</option>
+    </select>
+    <button onclick="addActivity()">➕ Thêm</button>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="🔍 Tìm kiếm hoạt động..." onkeyup="searchActivity()">
+  </div>
+
+  <table id="timetable">
+    <thead>
+      <tr>
+        <th>Thứ</th>
+        <th>Thời gian</th>
+        <th>Hoạt động</th>
+        <th>Loại</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="timetableBody">
+      <!-- Dữ liệu sẽ thêm ở đây -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
